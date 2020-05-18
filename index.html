@@ -8,163 +8,108 @@
   <meta name="author" content="Ahsan Farooq Khan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+* {
+  box-sizing:border-box;
+}
+
+.left {
+  background-color:#2196F3;
+  margin-bottom: 2%;
+  position: relative;
+  margin-right:7px;
+  margin-left:7px;
+  border:black;
+  padding:0%;
+  float:left;
+  width:32%; /* The width is 20%, by default */
+}
+
+.main {
+    margin-top: 0%;
+    margin-bottom: 2%;
+    border:black;
+    padding:0%;
+    position: relative;
+  margin-right:7px;
+  margin-left:7px; 
+  background-color:brown;
+  float:left;
+  width: 32%; /* The width is 60%, by default */
+}
+
+.right {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    border:black;
+    padding:0%;
+  margin-left:7px;
+  position: relative;
+  margin-right:7px;
+  background-color:#4CAF50;
+  float:left;
+  width:32%; /* The width is 20%, by default */
+}
 .box{
-    
-    width:20%;
-    border:5% solid black;
-    padding:10px;
-    margin: 10%;
-    margin-top: 5%;
-    background-color: burlywood;
-    
+  margin-top: 0%;
+    margin-bottom: 0%;
+    border:black;
+  padding:2px;
+  margin-right:0px;
+  position:sticky;
+  display: block;
+  margin-right:0px;
+  background-color:lightgray;
+  float: right;
+  width:25%;
+  
 }
-.box2{
-    margin-left:50%;
-    width:20%;
-    border:5% solid black;
-    padding:10px;
-    margin: 10%;
-    margin-top: 5%;
-    background-color: burlywood;
-    
-}
-.row
-{
-    width: 100%;
-    margin-left:13%;
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width:800px) {
+  .left, .main, .right {
+    width:95%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
 
 }
-.row2
-{
-    width: 100%;
-    
-    margin-left:13%;
-}
-.row3
-{
-    width: 100%;
-    margin-left:13%;
-}
-@media (min-width: 1200px) {
-    .col-lg-1, .col-lg-2, .col-lg-3{
-        float: left;
-        border: 1px solid black;
-    }
-    .col-lg-1{
-        width: 8.33%;
-    }
-    .col-lg-2{
-        width: 16.66%;
-    }
-    .col-lg-3{
-        width: 25%;
-    }
-}
-@media (min-width: 950px) and (max-width: 1199px) {
-    .col-md-1, .col-md-2, .col-md-3{
-        float: left;
-        border: 1px solid black;
-    }
-    .col-md-1{
-        width: 8.33%;
-    }
-    .col-md-2{
-        width: 16.66%;
-    }
-    .col-md-3{
-        width: 25%;
-    }
-}
-*{
-    box-sizing: border-box;
-}
-p{
-    
-    width:90%;
-    height: 150px;
-    border:1px solid black;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: burlywood;
-    
-}
-.bb{
-    
-    width:90%;
-    height: 150px;
-    border:1px solid black;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: burlywood;
-    
-}
-h1{
-    text-align:center;
-    margin-top: 10%;;
-
-}
-.smlbox{
-    margin: 0px;
-    margin-left:76% ;
-    border:10% solid black;
-    padding: 0px;
-
-
-}
-span{
-    width:20%;
-    height: 20px;
-    border:1px solid black;
-    margin-left: 274px;
-    background-color: rgb(148, 84, 0);
-    
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:95%;
+  }
 }
 
 </style>
 
 </head>
-<body>
-    <h1> Our Menu</h1>
-    <div class="row">
-        <div class="col-lg-3 col-md-3">
-           
-            <div class="bb">
-            <div>
-                <span>Chicken</span>
-
-            </div> 
-            Borders and Colors: Each section should have a background color set to some color (of your choosing).
+<body >
+    <h1 style="margin-top:5%; text-align:center; position:relative"> Our Menu</h1>
+    <div style="position: relative; display: block;" >
+    <div style="display: block; position: relative;" class="left">
+   <div class="box" ><p>Chicken</p></div>
+            <p style="margin-top: 10%;" > 
+             Borders and Colors: Each section should have a background color set to some color (of your choosing).
             Set the background color of each section title region to some unique color (of your choosing).
             Make sure that the background color still allows the user to view the text in the section and
-            section title regions</div> 
-            </div>
+            section title regions</p> 
+            
     </div>
-    <div class="row2">
-      <div class="col-lg-3 col-md-3">
-    
-        <div class="bb"> 
-            <div>
-                <span>Beef</span>
-
-            </div>Borders and Colors: Each section should have a background color set to some color (of your choosing).
+    <div style="display: block; position: relative;" class="main">
+    <div  class="box"><p>Beef</p></div>
+        <p style="margin-top: 10%;">Borders and Colors: Each section should have a background color set to some color (of your choosing).
         Set the background color of each section title region to some unique color (of your choosing).
         Make sure that the background color still allows the user to view the text in the section and
-        section title regions.
-    </div>
-</div>
-        </div>
-    
-        <div class="row3">
-    <div class="col-lg-3 col-md-3">
+        section title regions</p> 
         
-        <div class="bb">
-            <div>
-                <span>Sushi</span>
-            </div>Borders and Colors: Each section should have a background color set to some color (of your choosing).
-Set the background color of each section title region to some unique color (of your choosing).
-Make sure that the background color still allows the user to view the text in the section and
-section title regions.</div>
-        </div>
+</div>
+<div style="display: block; position: relative;" class="right">
+    <div  class="box" ><p>Sushi</p></div>
+    <p style="margin-top: 10%;">Borders and Colors: Each section should have a background color set to some color (of your choosing).
+        Set the background color of each section title region to some unique color (of your choosing).
+        Make sure that the background color still allows the user to view the text in the section and
+        section title regions</p> 
+    
+</div>
 </div>
 </body>
 
